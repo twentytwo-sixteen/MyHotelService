@@ -8,4 +8,3 @@ RUN pip install poetry && poetry config virtualenvs.create false && poetry insta
 COPY . .
 
 CMD ["uvicorn", "src.hotel_booking.main:app", "--host", "0.0.0.0", "--port", "8000"]
-
