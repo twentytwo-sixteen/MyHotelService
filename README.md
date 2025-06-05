@@ -6,3 +6,6 @@
 ```docker-compose exec app alembic revision --autogenerate -m "Comment"```
 -Для применения изменений
 ```docker-compose exec app alembic upgrade head```
+-Cтек:
+PosgreSQL, FastAPI, Python
+-Настроен CI с линтерами и тестами.
