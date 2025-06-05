@@ -17,10 +17,8 @@ async def create_booking(session: AsyncSession, booking_in: BookingCreate) -> Bo
     return booking
 
 
-async def get_bookings(session: AsyncSession, hotel_id: int | None = None):
+async def get_bookings(session: AsyncSession):
     query = select(Booking)
-    if hotel_id is not None:
-        query = query.where(Booking.hotel_id == hotel_id)
     result = await session.execute(query)
     return result.scalars().all()
 

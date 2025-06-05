@@ -1,5 +1,4 @@
 from datetime import date
-from datetime import datetime
 
 from pydantic import BaseModel
 from pydantic import Field
@@ -13,7 +12,6 @@ class BookingCreate(BaseModel):
 
 class BookingOut(BookingCreate):
     id: int
-    created_at: datetime
 
     class Config:
         orm_mode = True
