@@ -7,5 +7,5 @@
 -Для применения изменений
 ```docker-compose exec app alembic upgrade head```
 -Cтек:
-PosgreSQL, FastAPI, Python
+PosgreSQL, FastAPI, Python, Docker, Docker Compose
 -Настроен CI с линтерами и тестами.
